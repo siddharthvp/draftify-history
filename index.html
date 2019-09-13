@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!-- Attribution: Adapted from https://tools.wmflabs.org/apersonbot/afchistory/ -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Draftify History</title>
+    <link href="css/mw.css" rel="stylesheet" />
+    <link href="css/dhist.css" rel="stylesheet" />
+
+    <script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/dhist.js"></script>
+  </head>
+
+  <body>
+	<h1>Draftify History</h1>
+
+    <p>This tool shows a list of a user's moves of articles to draft namespace.</p>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" class="mw-ui-input mw-ui-input-inline"/>
+    <button id="submit" class="mw-ui-button mw-ui-constructive">
+      Submit
+    </button>
+    <br />
+    <output id="error" style="display: none;"></output>
+    <output id="result">
+      <div id="permalink"></div>
+      <div id="statistics"></div>
+      <table>
+        <tr>
+		  <th>From</th>
+		  <th>To</th>
+          <th>Timestamp</th>
+          <th>Comment</th>
+        </tr>
+      </table>
+    </output>
+    <br />
+    <footer>
+      <a href="https://en.wikipedia.org/wiki/User:SD0001" title="SD0001's user page on the English Wikipedia">SD0001</a> (<a href="https://en.wikipedia.org/wiki/User_talk:SD0001" title="SD0001's talk page on the English Wikipedia">talk</a>)
+    </footer>
+  </body>
+</html>
